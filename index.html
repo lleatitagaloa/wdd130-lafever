@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <!-- @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap') -->
     <div id="content">
         <header>
             <div class="content-width">
-            <a class="logo-link" href="index.html">
+            <a class="logo-link-header" href="index.html">
                 <img class="logo" src="images/tpg_logo.jpg" alt="TPG logo">
             </a>
             <nav class="navbar">
@@ -25,9 +24,6 @@
         </header>
     </div>
     <div class="hero-box">
-        <div id="hero-image">
-            <img id="hero-img" src="images/tpg_profile.jpg" alt="Tyler Profile image">
-        </div>
         <div id="hero-intro">
             <p>
                 Welcome to my personal projects site. I enjoy building, fixing, and experimenting with small DIY projects or 
@@ -35,8 +31,12 @@
                 some of the projects I have worked on, what I have learned, and more about me and who I am. 
             </p>
         </div>
+        <div id="hero-image">
+            <img id="hero-img" src="images/tpg_profile.jpg" alt="Tyler Profile image">
+        </div>
     </div>
-    <main id="gallery">
+    <h2 class="gallery-title">Gallery</h2>
+    <main id="gallery-grid">
         <img class="gallery-img" src="images/tpg_projects_1.jpg" alt="Project 1">
         <img class="gallery-img" src="images/tpg_projects_2.jpg" alt="Project 2">
         <img class="gallery-img" src="images/tpg_projects_3.jpg" alt="Project 3">
@@ -45,7 +45,7 @@
     <footer>
         <div id="footer-content">
             <div class="footer-logo">
-                <a class="logo-link" href="index.html">
+                <a id="logo-link-footer" href="index.html">
                 <img class="logo" src="images/tpg_logo.jpg" alt="TPG logo">
                 </a>
             </div>
