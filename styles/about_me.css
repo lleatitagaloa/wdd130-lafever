@@ -65,7 +65,8 @@ nav {
 }
 #hero-title h1 {
     margin: 0;
-    letter-spacing: 5px;
+    font-size: 4rem;
+    letter-spacing: 15px;
 }
 #hero-title h2 {
     max-width: 900px;
@@ -73,14 +74,14 @@ nav {
     background-color: #1F2933;
     text-align: center;
     font-family: Nunito, Arial, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
     line-height: 1.5;
     color: #D9C7A3;
 }
 #about-me-grid {
     max-width: 1200px;
-    margin: 80px auto;
+    margin: 50px auto 200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
@@ -94,11 +95,12 @@ nav {
 .card-info {
     color: #D9C7A3;
     font-family: Nunito, Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 h3 {
     font-size: 1.3rem;
     text-align: center;
+    letter-spacing: 3px;
 }
 footer {
     margin-top: 80px;
@@ -126,7 +128,8 @@ footer {
     transition: 0.3s;
     color: #1F2933;
     padding: 40px;
-    font-size: 1.2em;
+    font-size: 1em;
+    letter-spacing: 3px;
 }
 .footer-socials a:hover {
     color: #D9C7A3;

@@ -56,14 +56,14 @@ nav {
 #hero-title {
     background-color: #1F2933;
     text-align: center;
-    margin-bottom: 5px;
+    padding: 50px 0 0;
     color: #D9C7A3;
 }
 #hero-title h1 {
     margin: 0;
     font-family: Oswald, Arial, sans-serif;
     font-size: 4rem;
-    letter-spacing: 5px;
+    letter-spacing: 13px;
 }
 #projects-grid {
     max-width: 1200px;
@@ -81,10 +81,29 @@ nav {
 .card-info {
     color: #D9C7A3;
     font-family: Nunito, Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+@keyframes highlight {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(217, 199, 163, 0);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 30px rgba(217, 199, 163, 0.9);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(217, 199, 163, 0);
+    }
+}
+#projects-grid section:target {
+    animation: highlight 2s ease;
+    
 }
 h3 {
     font-size: 1.3rem;
+    letter-spacing: 3px;
     text-align: center;
 }
 footer {
@@ -113,7 +132,8 @@ footer {
     transition: 0.3s;
     color: #1F2933;
     padding: 40px;
-    font-size: 1.2em;
+    font-size: 1em;
+    letter-spacing: 3px;
 }
 .footer-socials a:hover {
     color: #D9C7A3;

@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -75,6 +78,10 @@ nav {
     padding: 10px;
     color: #D9C7A3;
 }
+#gallery a {
+    text-decoration: none;
+    display: inline-block;
+}
 .gallery-title {
     text-align: center;
     font-family: Oswald, Arial, sans-serif;
@@ -97,6 +104,12 @@ nav {
     object-fit: cover;
     flex: 0 0 auto;
     scroll-snap-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 footer {
     margin-top: 80px;
@@ -124,7 +137,7 @@ footer {
     transition: 0.3s;
     color: #1F2933;
     padding: 40px;
-    font-size: 1.2em;
+    font-size: 1em;
     letter-spacing: 3px;
 \
 }
